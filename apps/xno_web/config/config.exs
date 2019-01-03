@@ -6,14 +6,14 @@ use Mix.Config
 
 # General application configuration
 config :xno_web,
-  ecto_repos: [Xno.Repo],
+  # ecto_repos: [Xno.Repo],
   generators: [context_app: :xno]
 
 # Configures the endpoint
 config :xno_web, XnoWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "P7CWqY8czva/+7o8uHARXGyTAwI1QyoHYp3RKZuO3eXmpDkwZHoTmU3dwfkKUBXR",
-  render_errors: [view: XnoWeb.ErrorView, accepts: ~w(json)],
+  render_errors: [view: XnoWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: XnoWeb.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Import environment specific config. This must remain at the bottom

@@ -39,7 +39,8 @@ defmodule XnoWeb.MixProject do
     [
       {:phoenix, "~> 1.4.0"},
       {:phoenix_pubsub, "~> 1.1"},
-      {:phoenix_ecto, "~> 4.0"},
+      # {:phoenix_ecto, "~> 4.0"},
+      {:phoenix_html, "~> 2.11"},
       {:gettext, "~> 0.11"},
       {:xno, in_umbrella: true},
       {:jason, "~> 1.0"},
@@ -52,6 +53,6 @@ defmodule XnoWeb.MixProject do
   #
   # See the documentation for `Mix` for more info on aliases.
   defp aliases do
-    [test: ["ecto.create --quiet", "ecto.migrate", "test"]]
+    # [test: ["ecto.create --quiet", "ecto.migrate", "test"]]
   end
 end

@@ -1,7 +1,7 @@
 defmodule XnoWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :xno_web
 
-  socket "/socket", XnoWeb.UserSocket,
+  socket "/game", XnoWeb.GameSocket,
     websocket: true,
     longpoll: false
 
